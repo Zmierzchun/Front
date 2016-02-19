@@ -1,0 +1,160 @@
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Oxygen", sans-serif;
+  font-style: normal;
+  font-size: 100%;
+  color: #003878;
+  background: url(bgbright.png) repeat fixed; }
+
+nav {
+  display: block;
+  position: fixed;
+  margin: 0 0 0 0;
+  width: 100%; }
+
+#nav {
+  top: 1.875em;
+  background: url(bgblue.png) repeat;
+  border-bottom: solid 0.3125em #9e0000;
+  box-shadow: 0.125em 0.125em 0.3125em #000000; }
+
+#aux {
+  top: 0;
+  background: url(bgbright.png) repeat fixed;
+  font-size: 0.8em;
+  color: #003878; }
+
+ul {
+  display: block;
+  overflow: hidden;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0; }
+
+ul.auxMenu {
+  float: right; }
+
+ul.mainMenu {
+  float: right;
+  right: 0;
+  bottom: 0;
+  list-style-type: none;
+  font-weight: normal;
+  font-size: 1em;
+  color: #FFFFFF; }
+
+li {
+  display: inline-block;
+  bottom: 0; }
+
+li a {
+  display: block;
+  margin: 0;
+  padding: 0.8125em 1em;
+  text-align: right;
+  text-decoration: none;
+  color: inherit; }
+
+li a.mainMenuItem {
+  text-shadow: 0.0625em 0.0625em 0.125em #000000; }
+
+li a:hover.mainMenuItem {
+  background-color: #184578; }
+
+li a:hover.auxMenuItem {
+  background-color: #9e0000;
+  color: #FFFFFF; }
+
+.logo {
+  display: block;
+  position: absolute;
+  left: 2em;
+  top: -2.1875em;
+  height: 9.375em;
+  width: 9.375em;
+  -webkit-filter: drop-shadow(0.125em 0.125em 0.3125em #000000);
+  filter: drop-shadow(0.125em 0.125em 0.3125em #000000); }
+
+.brandSection {
+  display: block;
+  float: left;
+  left: 7.5em;
+  height: 100%;
+  width: 22em;
+  background: url(bg.png) repeat; }
+
+.brand, .brandSlogan {
+  font-family: "Orbitron", sans-serif;
+  color: #FFFFFF; }
+
+.brand {
+  margin: 0 0 0 7em;
+  font-size: 1.625em; }
+
+.brandSlogan {
+  margin: 0 0 0 21em;
+  font-size: 0.65em; }
+
+.content {
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 7.5em auto 7.5em auto;
+  padding-right: 1em;
+  text-align: justify; }
+
+.left-column {
+  float: left;
+  min-height: 100%;
+  width: 60%;
+  padding-right: 1.25em;
+  padding-left: 0.625em;
+  border-right: #184578 solid 1px; }
+
+.right-column {
+  float: right;
+  min-height: 100%;
+  width: 35%; }
+
+h1 {
+  text-align: left;
+  padding-top: 2.75em;
+  padding-left: 3em;
+  border-bottom: #9e0000 solid 2px; }
+
+footer {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  height: 3em;
+  width: 100%;
+  background: url(bgblue.png) repeat;
+  border-top: #9e0000 solid 0.3125em;
+  box-shadow: 0.125em 0.125em 0.3125em #000000; }
+
+.copyright {
+  padding: 0 1em 0 1em;
+  font-size: 1em;
+  font-style: italic;
+  font-family: "Orbitron", sans-serif;
+  text-align: right;
+  color: #FFFFFF;
+  text-shadow: 0.0625em 0.0625em 0.125em #000000; }
+
+.created {
+  display: inline-block;
+  float: right;
+  text-align: right;
+  font-style: italic;
+  font-size: 0.8em;
+  color: #003878; }
+
+.sidebargallery {
+  margin-bottom: 1em;
+  width: 100%;
+  box-shadow: 0.125em 0.125em 0.3125em #000000; }
+
+/*# sourceMappingURL=styles.css.map */

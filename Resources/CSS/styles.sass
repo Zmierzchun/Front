@@ -1,0 +1,238 @@
+//fonts & text
+$brandFontStyle:          'Orbitron'
+$brandMainFontSize:       1.625em
+$brandSloganFontSize:     0.65em
+$fontSize:                1em
+$navFontSize:             1em
+$auxFontSize:             0.8em
+$createdFontSize:         0.8em
+
+//sizes
+$boxShadowSize:           0.125em
+$boxShadowBlurSize:       0.3125em
+$navBorderThickness:      0.3125em
+$navHeight:               3*$navFontSize
+$navTextShadowSize:       0.0625em
+$navTextShadowBlurSize:   0.125em
+$navBrandWidth:           22em
+$logoHeight:              9.375em
+$logoWidth:               $logoHeight
+
+//positions
+$logoPosTop:              -2.1875em
+$logoPosLeft:             2em
+$brandPosLeft:            7.5em
+
+//margins & paddings
+$brandMarginLeft:         7em
+$brandSloganMarginLeft:   21em
+$contentMarginTop:        7.5em
+$contentMarginBottom:     7.5em
+$leftColumnPaddingRight:  1.25em
+$leftColumnPaddingLeft:   0.625em
+$h1PaddingTop:            2.75em
+$h1PaddingLeft:           3em
+$copyrightPaddingRL:      0 1em 0 1em
+
+//colors
+$mainFontColor:           #003878
+$boxShadowColor:          #000000
+$navBorderColor:          #9e0000
+$navFontColor:            #FFFFFF
+$navHoverLinkColor:       #184578
+$auxHoverLinkColor:       #9e0000
+$navTextShadowColor:      #000000
+$interColumnBorder:       #184578 solid 1px
+$h1Underline:             #9e0000 solid 2px
+
+//backgrounds
+$navMainBackgroundImg:    url(bgblue.png)
+$navBrandBackgroundImg:   url(bg.png)
+$siteMainBackgroundImg:   url(bgbright.png)
+
+html
+  width: 100%
+  height: 100%
+
+body
+  margin: 0
+  height: 100%
+
+  font-family: 'Oxygen', sans-serif
+  font-style: normal
+  font-size: 100%
+
+  color: $mainFontColor
+  background: $siteMainBackgroundImg repeat fixed
+
+nav
+  display: block
+  position: fixed
+  margin: 0 0 0 0
+
+  width: 100%
+
+#nav
+  top: 1.875em
+
+  background: $navMainBackgroundImg repeat
+  border-bottom: solid $navBorderThickness $navBorderColor
+  box-shadow: $boxShadowSize $boxShadowSize $boxShadowBlurSize $boxShadowColor
+
+#aux
+  top: 0
+
+  background: $siteMainBackgroundImg repeat fixed
+
+  font-size:            $auxFontSize
+  color:                $mainFontColor
+
+ul
+  display: block
+  overflow: hidden
+
+
+  margin: 0 0 0 0
+  padding: 0 0 0 0
+
+ul.auxMenu
+  float: right
+ul.mainMenu
+  float: right
+  right: 0
+  bottom: 0
+
+  list-style-type: none
+  font-weight: normal
+  font-size: $navFontSize
+
+  color: $navFontColor
+
+li
+  display: inline-block
+  bottom: 0
+
+li a
+  display: block
+  margin: 0
+  padding: 0.8125em 1em
+
+  text-align: right
+  text-decoration: none
+  color: inherit
+
+li a.mainMenuItem
+  text-shadow: $navTextShadowSize $navTextShadowSize $navTextShadowBlurSize $navTextShadowColor
+
+
+li a:hover.mainMenuItem
+  background-color:     $navHoverLinkColor
+
+li a:hover.auxMenuItem
+  background-color:     $auxHoverLinkColor
+  color:                $navFontColor
+.logo
+  display:              block
+  position:             absolute
+  left:                 $logoPosLeft
+  top:                  $logoPosTop
+
+  height:               $logoHeight
+  width:                $logoWidth
+
+  -webkit-filter:       drop-shadow($boxShadowSize $boxShadowSize $boxShadowBlurSize $boxShadowColor)
+  filter:               drop-shadow($boxShadowSize $boxShadowSize $boxShadowBlurSize $boxShadowColor)
+
+.brandSection
+  display:              block
+  float:                left
+
+  left:                 $brandPosLeft
+  height:               100%
+  width:                $navBrandWidth
+
+  background:           $navBrandBackgroundImg repeat
+
+
+.brand, .brandSlogan
+  font-family:          $brandFontStyle, sans-serif
+
+  color:                $navFontColor
+
+.brand
+  margin:               0 0 0 $brandMarginLeft
+
+  font-size:            $brandMainFontSize
+
+.brandSlogan
+  margin:               0 0 0 $brandSloganMarginLeft
+  font-size:            $brandSloganFontSize
+
+.content
+  min-height:           100%
+  max-width:            1200px
+
+  margin:               $contentMarginTop auto $contentMarginBottom auto
+  padding-right:        1em
+
+  text-align:           justify
+
+.left-column
+  float:                left
+  min-height:           100%
+  width:                60%
+
+  padding-right:        $leftColumnPaddingRight
+  padding-left:         $leftColumnPaddingLeft
+
+  border-right:         $interColumnBorder
+
+.right-column
+  float:                right
+  min-height:           100%
+  width:                35%
+
+h1
+  text-align:           left
+  padding-top:          $h1PaddingTop
+  padding-left:         $h1PaddingLeft
+  border-bottom:        $h1Underline
+
+footer
+  display:              block
+  position:             fixed
+  bottom:               0
+
+  height:               3em
+  width:                100%
+
+  background:           $navMainBackgroundImg repeat
+
+  border-top:           $navBorderColor solid $navBorderThickness
+
+  box-shadow:           $boxShadowSize $boxShadowSize $boxShadowBlurSize $boxShadowColor
+
+.copyright
+  padding:              $copyrightPaddingRL
+
+  font-size:            1em
+  font-style:           italic
+  font-family:          'Orbitron', sans-serif
+
+  text-align:           right
+  color:                $navFontColor
+  text-shadow:          $navTextShadowSize $navTextShadowSize $navTextShadowBlurSize $navTextShadowColor
+
+.created
+  display:              inline-block
+  float:                right
+
+  text-align:           right
+  font-style:           italic
+  font-size:            $createdFontSize
+  color:                $mainFontColor
+
+.sidebargallery
+  margin-bottom:        1em
+  width: 100%
+  box-shadow: $boxShadowSize $boxShadowSize $boxShadowBlurSize $boxShadowColor
